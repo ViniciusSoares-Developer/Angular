@@ -1,0 +1,6 @@
+<div class="class">
+    <p *ngIf="show">exibindo mensagem</p>
+    <button (click)="showMensagem()">clique em mim</button>
+    <div style="width: 100px; height: 100px;" [ngStyle]="{'background-color': color}" (mouseenter)="tradeColor('blue')" (mouseleave)="tradeColor('red')"></div>
+    <div (blur)="consolelog()"></div>
+</div>
